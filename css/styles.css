@@ -1,0 +1,144 @@
+/* Global */
+:root {
+  --primary-color: #ff951f;
+  --secondary-color: #255ceb;
+  --white-color: #ffffff;
+  --black-color: #000000;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url(../assets/fonts/Nunito-VariableFont_wght.ttf);
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: Nunito;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--white-color);
+}
+
+li.active > a {
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+.container {
+  padding: 0 24px;
+}
+
+/* HEADER */
+header {
+  padding: 24px 0;
+  font-size: 2rem;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  height: 50px;
+}
+
+.header-logo img {
+  height: 100%;
+}
+
+.header-nav li {
+  display: inline-block;
+}
+
+.header-nav li a {
+  display: block;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+  padding: 24px 0;
+  background-color: var(--primary-color);
+  color: var(--black-color);
+  font-size: 2rem;
+}
+
+footer a {
+  color: var(--black-color);
+}
+
+footer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 2rem 1rem 3rem;
+}
+
+footer .row:first-child {
+  border-bottom: 2px solid var(--black-color);
+}
+
+footer .logo {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+footer .logo img {
+  width: 100%;
+}
+
+footer .phone-number {
+  font-size: 2.3rem;
+  display: block;
+  font-weight: bold;
+  margin-top: 3rem;
+}
+
+footer .social-section h3 {
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+footer .social-section .social-list {
+  text-align: right;
+}
+
+footer .social-section .social-list li {
+  display: inline-block;
+}
+
+footer .social-section img {
+  width: 40px;
+}
+
+footer .ref-nav li {
+  display: inline-block;
+}
+
+footer .ref-nav a {
+  display: block;
+  text-decoration: underline;
+  padding: 2px 6px;
+}
