@@ -1,0 +1,31 @@
+.section-title {
+  font-size: 4rem;
+  line-height: 1.2;
+  color: var(--primary-color);
+}
+
+.section-description {
+  font-size: 2.5rem;
+  line-height: 1.2;
+}
+
+#hero-banner {
+  position: relative;
+}
+
+#hero-banner img {
+  width: 100%;
+}
+
+#hero-banner .content {
+  position: absolute;
+  left: 4rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70%;
+  max-width: 565px;
+}
+
+#hero-banner .content .section-title {
+  margin-bottom: 2rem;
+}
