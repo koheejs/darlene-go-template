@@ -9,23 +9,453 @@
   line-height: 1.2;
 }
 
-#hero-banner {
+.tag {
+  padding: 0.5rem 2rem;
+  background-color: var(--secondary-color);
+  display: inline-block;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: var(--secondary-color);
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+}
+
+/* Hero banner section */
+#hero-banner,
+#amplify-engagement {
   position: relative;
+  height: 80vh;
+  min-height: 800px;
+  overflow: hidden;
 }
 
-#hero-banner img {
-  width: 100%;
-}
-
-#hero-banner .content {
+#hero-banner img,
+#amplify-engagement img {
+  /* width: 1200px; */
+  width: 60vw;
+  right: 0;
+  bottom: 0;
   position: absolute;
-  left: 4rem;
+  z-index: 0;
+}
+
+#hero-banner .container,
+#amplify-engagement .container {
+  position: relative;
+  height: 100%;
+  z-index: 1;
+}
+
+#hero-banner .content,
+#amplify-engagement .content {
+  position: relative;
   top: 50%;
   transform: translateY(-50%);
   width: 70%;
   max-width: 565px;
 }
 
-#hero-banner .content .section-title {
+#hero-banner .content .section-title,
+#amplify-engagement .content .section-title {
   margin-bottom: 2rem;
+}
+
+#hero-banner .content p {
+  margin-bottom: 3rem;
+}
+
+/* Trusted partner section */
+#trusted-partners {
+  background-color: var(--dark-color);
+  padding: 4rem 8rem 6rem;
+}
+
+#trusted-partners .title {
+  font-weight: 1.4rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+#trusted-partners .partners {
+  margin: 0 -1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-column-gap: 60px;
+  grid-row-gap: 20px;
+}
+
+#trusted-partners .partners li {
+  padding: 0 1rem;
+  height: 120px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#trusted-partners .partners img {
+  width: 150px;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Morden purchase section */
+#modern-purchase {
+  position: relative;
+  height: 60vh;
+  min-height: 800px;
+}
+
+#modern-purchase .container {
+  height: 100%;
+}
+
+#modern-purchase .content {
+  height: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  display: flex;
+  gap: 4rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#modern-purchase .section-description {
+  font-size: 2rem;
+}
+
+/* Amplify engagement section */
+#amplify-engagement {
+  background-color: #090909;
+}
+
+#amplify-engagement img {
+  object-position: bottom right;
+}
+
+/* Key offerings section */
+#key-offerings {
+  padding: 4rem 0;
+}
+
+/* #key-offerings .tag {} */
+
+#key-offerings .offering-group {
+  border-bottom: 1px solid var(--white-color);
+  padding: 2rem 0 4rem;
+  margin-top: 4rem;
+  cursor: pointer;
+}
+
+#key-offerings .offering-group .title {
+  font-size: 8rem;
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#key-offerings .offering-group.active .title {
+  color: var(--primary-color);
+}
+
+#key-offerings .offering-group .title span {
+  padding-right: 5rem;
+}
+
+#key-offerings .offering-group .title img {
+  transition: transform 0.3s ease;
+}
+
+#key-offerings .offering-group.active .title img {
+  transform: rotate(90deg);
+}
+
+#key-offerings .offering-group .content {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease;
+}
+
+/* Key benefits section */
+#key-benefits {
+  background-color: var(--dark-color);
+  padding: 8rem 0;
+}
+
+#key-benefits .benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 60px;
+  column-gap: 40px;
+}
+
+#key-benefits .benefits li {
+  width: 220px;
+}
+
+#key-benefits .benefits img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+/* Solutions section */
+#solutions {
+  background-image: url('/assets/images/landing-solution-bg.png');
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+
+  min-height: 500px;
+  padding-bottom: 4rem;
+}
+
+#solutions .hero {
+  margin-bottom: 8rem;
+}
+
+#solutions .hero img {
+  width: 100%;
+}
+
+#solutions .solution-notes .line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#solutions .solution-notes .line .content {
+  width: calc(58.16% - 30px);
+  min-width: 390px;
+  flex-shrink: 0;
+  text-align: right;
+  padding: 0 3rem;
+}
+
+#solutions .solution-notes .content p {
+  width: 320px;
+  display: inline-block;
+}
+
+#solutions .solution-notes .heading {
+  width: 320px;
+  display: inline-block;
+  color: var(--primary-color);
+  font-size: 2.4rem;
+}
+
+#solutions .solution-notes .line .icon {
+  width: 40%;
+  height: 60px;
+}
+
+#solutions .solution-notes .icon img {
+  width: 60px;
+}
+
+#solutions .solution-notes .bigtext {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+}
+
+/* Testimonials section */
+#testimonials {
+  background-image: url('/assets/images/landing-solution-bg.png');
+  background-size: 100% auto;
+  background-repeat: repeat-y;
+  padding: 8rem 0 4rem;
+}
+
+#testimonials .wrapper {
+  display: flex;
+}
+
+#testimonials .heading {
+  width: 58.16%;
+  flex-shrink: 0;
+  padding: 0 4rem;
+  padding-top: 250px;
+}
+
+#testimonials .heading .tag {
+  margin-bottom: 2rem;
+}
+
+#testimonials .feedbacks {
+  padding: 0 4rem;
+  max-width: 480px;
+}
+
+#testimonials .feedbacks .item {
+  margin-bottom: 8rem;
+}
+
+#testimonials .avatar {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 4rem;
+}
+
+#testimonials img {
+  width: 100%;
+  height: 100%;
+}
+
+#testimonials .title {
+  font-size: 2.4rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+#testimonials .review {
+  line-height: 1.6;
+}
+
+#testimonials .signature {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+
+/* ========== */
+/* RESPONSIVE */
+/* ========== */
+@media only screen and (max-width: 1150px) {
+  #hero-banner,
+  #amplify-engagement {
+    height: auto;
+    min-height: 0;
+    padding: 4rem 0 0;
+  }
+
+  #hero-banner img,
+  #amplify-engagement img {
+    width: 100%;
+    position: static;
+  }
+
+  #amplify-engagement img {
+    margin-top: 4rem;
+  }
+
+  #hero-banner .content,
+  #amplify-engagement .content {
+    position: relative;
+    top: 0;
+    transform: none;
+    width: 100%;
+  }
+
+  #key-offerings .offering-group .title {
+    font-size: 6rem;
+  }
+
+  #key-offerings .offering-group .title img {
+    width: 60px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  #key-offerings .offering-group .title {
+    justify-content: space-between;
+    font-size: 4rem;
+  }
+
+  #key-offerings .offering-group .title img {
+    width: 40px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section-title {
+    font-size: 3rem;
+  }
+
+  .section-description {
+    font-size: 2rem;
+  }
+
+  #trusted-partners .title {
+    text-align: center;
+  }
+
+  #key-benefits .benefits {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  #key-benefits .benefits li {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  #key-benefits .benefits li:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  #key-offerings .offering-group {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  #key-offerings .offering-group .title {
+    font-size: 2.4rem;
+  }
+
+  #key-offerings .offering-group .title img {
+    width: 20px;
+  }
+
+  #solutions .line {
+    flex-direction: column-reverse;
+    row-gap: 1rem;
+  }
+
+  #solutions .solution-notes .line .icon {
+    width: auto;
+    height: auto;
+  }
+
+  #solutions .solution-notes .icon img {
+    width: 40px;
+  }
+
+  #solutions .solution-notes .line .content {
+    text-align: center;
+    width: 100%;
+    min-width: 0;
+    max-width: 320px;
+  }
+
+  #solutions .solution-notes .line .content-full {
+    max-width: 100%;
+  }
+
+  #solutions .solution-notes .content p {
+    width: auto;
+  }
+
+  #solutions .solution-notes .heading {
+    width: auto;
+  }
+
+  #testimonials .wrapper {
+    display: block;
+  }
+
+  #testimonials .heading {
+    width: 100%;
+    margin-bottom: 5rem;
+    padding-top: 0;
+  }
+
+  #testimonials .feedbacks {
+    margin: 0 auto;
+  }
 }

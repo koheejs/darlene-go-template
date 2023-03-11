@@ -3,12 +3,17 @@
   --primary-color: #ff951f;
   --secondary-color: #255ceb;
   --white-color: #ffffff;
-  --black-color: #000000;
+  --black-color: #060606;
+  --dark-color: #191919;
 }
 
 @font-face {
   font-family: 'Nunito';
   src: url(../assets/fonts/Nunito-VariableFont_wght.ttf);
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html {
@@ -18,6 +23,7 @@ html {
 body {
   font-family: Nunito;
   font-size: 1.8rem;
+  line-height: 1.3;
   color: var(--white-color);
   background-color: var(--black-color);
 }
@@ -45,6 +51,8 @@ h3 {
 
 .container {
   padding: 0 4rem;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 /* HEADER */
@@ -57,6 +65,16 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+header .mobile-button {
+  width: 40px;
+  align-items: center;
+  display: none;
+}
+
+header .mobile-button img {
+  width: 100%;
 }
 
 .header-logo {
@@ -140,4 +158,55 @@ footer .ref-nav a {
   display: block;
   text-decoration: underline;
   padding: 2px 6px;
+}
+
+/* ========== */
+/* RESPONSIVE */
+/* ========== */
+@media only screen and (max-width: 960px) {
+  footer .row {
+    align-items: flex-start;
+  }
+
+  footer .ref-nav li {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 3rem;
+  }
+
+  .header-logo {
+    height: 30px;
+  }
+
+  header .header-nav {
+    display: none;
+  }
+
+  header .mobile-button {
+    display: flex;
+  }
+
+  footer .row {
+    display: block;
+  }
+
+  footer .contact-section {
+    margin-bottom: 2rem;
+  }
+
+  footer .phone-number {
+    margin-top: 1rem;
+  }
+
+  footer .social-section h3 {
+    margin-bottom: 1rem;
+  }
+
+  footer .social-section .social-list {
+    text-align: left;
+  }
 }
