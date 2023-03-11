@@ -206,7 +206,7 @@
 
 /* Solutions section */
 #solutions {
-  background-image: url('/assets/images/landing-solution-bg.png');
+  background-image: url('../assets/images/landing-solution-bg.png');
   background-size: 100% auto;
   background-repeat: repeat-y;
 
@@ -265,7 +265,7 @@
 
 /* Testimonials section */
 #testimonials {
-  background-image: url('/assets/images/landing-solution-bg.png');
+  background-image: url('../assets/images/landing-solution-bg.png');
   background-size: 100% auto;
   background-repeat: repeat-y;
   padding: 8rem 0 4rem;
