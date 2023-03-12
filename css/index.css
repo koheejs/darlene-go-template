@@ -35,10 +35,19 @@
 #amplify-engagement img {
   /* width: 1200px; */
   width: 60vw;
+  min-width: 1000px;
   right: 0;
   bottom: 0;
   position: absolute;
   z-index: 0;
+}
+
+#hero-banner img {
+  min-width: 900px;
+}
+
+#amplify-engagement img {
+  min-width: 1000px;
 }
 
 #hero-banner .container,
@@ -322,9 +331,10 @@
   font-size: 1.6rem;
 }
 
-/* ========== */
+/* ============================ */
 /* RESPONSIVE */
-/* ========== */
+/* ============================ */
+
 @media only screen and (max-width: 1150px) {
   #hero-banner,
   #amplify-engagement {
@@ -336,6 +346,7 @@
   #hero-banner img,
   #amplify-engagement img {
     width: 100%;
+    min-width: 0;
     position: static;
   }
 
@@ -457,5 +468,190 @@
 
   #testimonials .feedbacks {
     margin: 0 auto;
+  }
+}
+
+/* ============================ */
+/* END RESPONSIVE */
+/* ============================ */
+
+/* ======================================= */
+/* ============ SOLUTION PAGE ============ */
+/* ======================================= */
+
+/* Hero banner section */
+#solution-hero-banner,
+#capture-heart-mind-wallet,
+#capture-zero-party-list {
+  position: relative;
+  overflow: hidden;
+}
+
+#solution-hero-banner {
+  height: 56.267vw;
+}
+
+#capture-heart-mind-wallet {
+  height: 40.464vw;
+}
+
+#capture-zero-party-list {
+  height: 56.25vw;
+}
+
+#solution-hero-banner img,
+#capture-heart-mind-wallet img,
+#capture-zero-party-list .background {
+  width: 100%;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  z-index: 0;
+}
+
+#solution-hero-banner .container,
+#capture-heart-mind-wallet .container,
+#capture-zero-party-list .container {
+  position: relative;
+  height: 100%;
+  z-index: 1;
+}
+
+#solution-hero-banner .content,
+#capture-heart-mind-wallet .content,
+#capture-zero-party-list .content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 70%;
+  max-width: 565px;
+}
+
+#capture-zero-party-list .content {
+  width: 50%;
+  max-width: none;
+}
+
+#solution-hero-banner .content .section-title,
+#capture-heart-mind-wallet .content .section-title {
+  margin-bottom: 2rem;
+}
+
+#solution-hero-banner .content p,
+#capture-heart-mind-wallet .content p {
+  margin-bottom: 3rem;
+}
+
+#capture-zero-party-list .content .list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 3rem;
+}
+
+#capture-zero-party-list .content .list li {
+  width: 50%;
+  padding-right: 4rem;
+}
+
+#capture-zero-party-list .content .icon {
+  width: 80px;
+}
+
+#capture-zero-party-list .content .title {
+  margin: 1.5rem 0;
+}
+
+#heart-mind-wallet {
+  padding: 4rem 0;
+}
+
+#heart-mind-wallet .list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  justify-content: space-between;
+}
+
+#heart-mind-wallet .list li {
+  max-width: 400px;
+}
+
+#heart-mind-wallet .list .icon {
+  width: 80px;
+}
+
+#heart-mind-wallet .list .title {
+  margin: 1.5rem 0;
+  font-size: 2.4rem;
+}
+
+#capture-zero-party-data {
+  padding: 4rem 0;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+#capture-zero-party-data h3 {
+  margin-bottom: 2rem;
+}
+
+#capture-zero-party-data p {
+  font-size: 2rem;
+  margin: 2rem auto;
+  max-width: 680px;
+}
+
+#capture-zero-party-data p.btn {
+  margin-top: 8rem;
+  margin-bottom: 0;
+}
+
+/* ============================ */
+/* RESPONSIVE */
+/* ============================ */
+
+@media only screen and (max-width: 1150px) {
+  #solution-hero-banner,
+  #capture-heart-mind-wallet,
+  #capture-zero-party-list {
+    height: auto;
+    min-height: 0;
+    padding: 4rem 0 0;
+  }
+
+  #solution-hero-banner img,
+  #capture-heart-mind-wallet img,
+  #capture-zero-party-list .background {
+    width: 100%;
+    position: static;
+    transform: none;
+  }
+
+  #solution-hero-banner .content,
+  #capture-heart-mind-wallet .content,
+  #capture-zero-party-list .content {
+    position: relative;
+    top: 0;
+    transform: none;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #heart-mind-wallet .list .icon {
+    width: 60px;
+  }
+
+  #capture-zero-party-list .content .icon {
+    width: 60px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  #capture-zero-party-list .content .list li {
+    width: 100%;
+    padding-right: 0;
   }
 }

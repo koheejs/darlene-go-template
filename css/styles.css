@@ -55,6 +55,15 @@ h3 {
   margin: 0 auto;
 }
 
+/* ==================== Utilities ==================== */
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
 /* HEADER */
 header {
   padding: 24px 0;
