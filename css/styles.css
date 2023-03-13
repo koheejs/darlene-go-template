@@ -50,7 +50,7 @@ h3 {
 }
 
 .container {
-  padding: 0 4rem;
+  padding: 0 8rem;
   max-width: 1920px;
   margin: 0 auto;
 }
@@ -64,9 +64,13 @@ h3 {
   color: var(--primary-color);
 }
 
+.text-secondary {
+  color: var(--secondary-color);
+}
+
 /* HEADER */
 header {
-  padding: 24px 0;
+  padding: 60px 0;
   font-size: 2rem;
 }
 
@@ -185,6 +189,10 @@ footer .ref-nav a {
 @media only screen and (max-width: 768px) {
   .container {
     padding: 0 3rem;
+  }
+
+  header {
+    padding: 3rem 0;
   }
 
   .header-logo {

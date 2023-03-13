@@ -655,3 +655,196 @@
     padding-right: 0;
   }
 }
+
+/* ============================ */
+/* END RESPONSIVE */
+/* ============================ */
+
+/* ======================================= */
+/* ============= ABOUT PAGE ============== */
+/* ======================================= */
+
+/* About intro section */
+#about-intro {
+  background-image: url('../assets/images/about-hero-bg.png');
+  background-size: cover;
+  max-height: 80vh;
+  position: relative;
+  min-height: 600px;
+}
+
+#about-intro #about-intro .container {
+  width: 100%;
+}
+
+#about-intro .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  max-width: 1920px;
+  transform: translate(-50%, -50%);
+  padding: 0 8rem;
+}
+
+#about-intro .title {
+  font-size: 5.1rem;
+  max-width: 1000px;
+}
+#about-intro .description {
+  font-size: 2.5rem;
+  max-width: 600px;
+  margin: 3rem 0;
+}
+
+/* Global expertise section */
+#global-expertise {
+  height: 70vh;
+  min-height: 700px;
+}
+
+#global-expertise .container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#global-expertise .heading {
+  font-size: 4rem;
+  margin-bottom: 10rem;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#global-expertise .company-stats {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  border-left: 1px solid var(--white-color);
+  border-right: 1px solid var(--white-color);
+}
+
+#global-expertise .company-stats .stat-item {
+  font-size: 1.5rem;
+  padding: 2rem 1rem 4rem;
+}
+
+#global-expertise .company-stats .stat-item .number {
+  font-size: 4.6rem;
+  margin-right: 1rem;
+  color: var(--primary-color);
+}
+
+#global-expertise .company-stats .stat-description {
+  font-size: 3.5rem;
+}
+
+#global-expertise .company-stats .stat-item {
+  width: calc(100% / 3);
+  flex-shrink: 0;
+  text-align: center;
+  border-left: 1px solid var(--white-color);
+  border-right: 1px solid var(--white-color);
+}
+
+/* Our team section */
+#our-team {
+  padding: 8rem 0;
+}
+
+#our-team .members-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -10rem;
+}
+
+#our-team .member {
+  margin: 4rem 0;
+  padding: 0 10rem;
+  flex-shrink: 0;
+  width: calc(100% / 3);
+}
+
+#our-team img {
+  width: 150px;
+  margin-bottom: 3rem;
+}
+
+#our-team .member-name {
+  font-size: 3rem;
+}
+
+#our-team .member-position {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+#our-team .member-description {
+  font-size: 1.8rem;
+}
+
+/* ============================ */
+/* RESPONSIVE */
+/* ============================ */
+@media screen and (orientation: landscape) {
+  #about-intro .container {
+    padding-top: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  #our-team .members-list {
+    margin: 0 -4rem;
+  }
+
+  #our-team .member {
+    padding: 0 4rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  #our-team .member {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #about-intro .title {
+    font-size: 3.6rem;
+  }
+
+  #about-intro .description {
+    font-size: 2rem;
+  }
+
+  #global-expertise .company-stats {
+    display: block;
+  }
+
+  #global-expertise .company-stats .stat-item {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #about-intro .content {
+    padding: 0 3rem;
+  }
+
+  #global-expertise .heading {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  #our-team .member {
+    width: 100%;
+  }
+}
