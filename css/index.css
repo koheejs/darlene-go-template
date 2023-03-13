@@ -85,6 +85,7 @@
   font-weight: 1.4rem;
   text-transform: uppercase;
   margin-bottom: 2rem;
+  padding: 0 8rem;
 }
 
 #trusted-partners .partner-wrapper {
@@ -359,6 +360,17 @@
     position: static;
   }
 
+  #trusted-partners .container {
+    padding: 0;
+  }
+
+  #trusted-partners .partner-wrapper li:first-child {
+    padding-left: 8rem;
+  }
+  #trusted-partners .partner-wrapper li:last-child {
+    padding-right: 8rem;
+  }
+
   #amplify-engagement img {
     margin-top: 4rem;
   }
@@ -398,6 +410,13 @@
 
   .section-description {
     font-size: 2rem;
+  }
+
+  #trusted-partners .partner-wrapper li:first-child {
+    padding-left: 4rem;
+  }
+  #trusted-partners .partner-wrapper li:last-child {
+    padding-right: 4rem;
   }
 
   #trusted-partners .title {
@@ -845,6 +864,15 @@
 @media only screen and (max-width: 768px) {
   #about-intro .content {
     padding: 0 3rem;
+  }
+
+  #global-expertise {
+    padding: 6rem 0;
+    height: auto;
+  }
+
+  #global-expertise .container {
+    display: block;
   }
 
   #global-expertise .heading {

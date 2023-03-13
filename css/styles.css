@@ -28,6 +28,10 @@ body {
   background-color: var(--black-color);
 }
 
+body.freeze-body {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   color: var(--white-color);
@@ -83,6 +87,9 @@ header .container {
 header .mobile-button {
   width: 40px;
   align-items: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
   display: none;
 }
 
@@ -92,6 +99,8 @@ header .mobile-button img {
 
 .header-logo {
   height: 50px;
+  position: relative;
+  z-index: 100;
 }
 
 .header-logo img {
@@ -106,6 +115,32 @@ header .mobile-button img {
   display: block;
   padding: 5px 10px;
   cursor: pointer;
+}
+
+header .mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  z-index: 99;
+  background-color: #373737;
+  overflow: hidden;
+  transition: height 0.3s;
+}
+
+header .mobile-nav.active {
+  height: 100vh;
+}
+
+header .mobile-nav li {
+  text-align: center;
+  margin: 0.4rem;
+  font-size: 4rem;
+}
+
+header .mobile-nav li:first-child {
+  padding-top: 10rem;
 }
 
 /* FOOTER */

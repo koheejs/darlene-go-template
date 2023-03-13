@@ -1,6 +1,20 @@
 'use strict';
 
 (function () {
+  const classFreezeBody = 'freeze-body';
+  const classActive = 'active';
+
+  const body = document.body;
+  const mobileMenuButton = document.querySelector('.mobile-button');
+  const mobileMenu = document.querySelector('.mobile-nav');
+
+  mobileMenuButton.addEventListener('click', function () {
+    body.classList.toggle(classFreezeBody);
+    mobileMenu.classList.toggle(classActive);
+  });
+})();
+
+(function () {
   const offeringGroups = document.querySelectorAll('.offering-group');
 
   function toggle(element, isShow) {
