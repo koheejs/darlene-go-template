@@ -40,3 +40,31 @@
     });
   }
 })();
+
+(function () {
+  const swiper = new Swiper('.solution-platforms', {
+    effect: 'coverflow',
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: 'auto',
+    initialSlide: 3,
+
+    coverflowEffect: {
+      rotate: 30,
+      stretch: 50,
+      depth: 2,
+      modifier: 1,
+      slideShadows: true,
+    },
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+})();
