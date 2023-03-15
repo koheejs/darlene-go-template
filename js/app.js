@@ -42,6 +42,8 @@
 })();
 
 (function () {
+  if (!window.Swiper) return;
+
   const swiper = new Swiper('.solution-platforms', {
     effect: 'coverflow',
     grabCursor: true,

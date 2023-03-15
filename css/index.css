@@ -46,6 +46,29 @@
   min-width: 900px;
 }
 
+#hero-banner .video-wrapper {
+  width: 60vw;
+  min-width: 1000px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 0;
+  overflow: hidden;
+}
+
+#hero-banner .video-wrapper video {
+  width: 140%;
+  margin-left: -40%;
+}
+
+#hero-banner {
+  background-color: #000000;
+}
+
+#hero-banner .video-wrapper {
+  min-width: 900px;
+}
+
 #amplify-engagement img {
   min-width: 1000px;
 }
@@ -362,6 +385,12 @@
 
   #hero-banner img,
   #amplify-engagement img {
+    width: 100%;
+    min-width: 0;
+    position: static;
+  }
+
+  #hero-banner .video-wrapper {
     width: 100%;
     min-width: 0;
     position: static;
