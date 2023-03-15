@@ -74,7 +74,7 @@ h3 {
 
 /* HEADER */
 header {
-  padding: 60px 0;
+  padding: 3rem 0;
   font-size: 2rem;
 }
 
@@ -109,6 +109,11 @@ header .mobile-button img {
 
 .header-nav li {
   display: inline-block;
+}
+
+.header-nav li:hover a {
+  color: var(--primary-color);
+  transition: color 0.3s;
 }
 
 .header-nav li a {

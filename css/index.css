@@ -23,10 +23,15 @@
 }
 
 /* Hero banner section */
-#hero-banner,
+#hero-banner {
+  position: relative;
+  height: 40vw;
+  overflow: hidden;
+}
+
 #amplify-engagement {
   position: relative;
-  height: 80vh;
+  height: 60vh;
   min-height: 800px;
   overflow: hidden;
 }
@@ -174,7 +179,7 @@
 
 /* Key offerings section */
 #key-offerings {
-  padding: 4rem 0;
+  padding: 10rem 0;
   background-color: #111111;
 }
 
@@ -188,7 +193,7 @@
 }
 
 #key-offerings .offering-group .title {
-  font-size: 8rem;
+  font-size: 6rem;
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
@@ -375,6 +380,12 @@
 /* RESPONSIVE */
 /* ============================ */
 
+@media only screen and (max-width: 1366px) {
+  #hero-banner {
+    height: 45vw;
+  }
+}
+
 @media only screen and (max-width: 1150px) {
   #hero-banner,
   #amplify-engagement {
@@ -417,6 +428,10 @@
     top: 0;
     transform: none;
     width: 100%;
+  }
+
+  #key-offerings {
+    padding: 8rem 0;
   }
 
   #key-offerings .offering-group .title {
@@ -610,7 +625,7 @@
 #capture-zero-party-list .content .list {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 3rem;
+  row-gap: 6rem;
 }
 
 #capture-zero-party-list .content .list li {
@@ -619,11 +634,12 @@
 }
 
 #capture-zero-party-list .content .icon {
-  width: 80px;
+  width: 60px;
 }
 
 #capture-zero-party-list .content .title {
-  margin: 1.5rem 0;
+  font-size: 1.8rem;
+  margin: 1rem 0;
 }
 
 #heart-mind-wallet {
@@ -642,12 +658,12 @@
 }
 
 #heart-mind-wallet .list .icon {
-  width: 80px;
+  width: 60px;
 }
 
 #heart-mind-wallet .list .title {
-  margin: 1.5rem 0;
-  font-size: 2.4rem;
+  margin: 1rem 0;
+  font-size: 1.8rem;
 }
 
 #capture-zero-party-data {
@@ -962,19 +978,18 @@
 }
 
 #our-team img {
-  width: 150px;
-  margin-bottom: 3rem;
+  width: 115px;
+  margin-bottom: 1.5rem;
 }
 
 #our-team .member-name {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 
 #our-team .member-position {
   font-size: 1.5rem;
-  text-transform: uppercase;
   color: var(--secondary-color);
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-weight: bold;
 }
 
