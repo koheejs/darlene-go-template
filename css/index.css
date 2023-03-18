@@ -704,7 +704,7 @@
 #solution-platforms {
   padding: 8rem 0;
   position: relative;
-  background-color: #1a1a1a;
+  background-color: var(--black-color);
 }
 
 #solution-platforms .swiper {
@@ -714,7 +714,7 @@
 }
 
 #solution-platforms .swiper-slide {
-  background: #000000;
+  background: #333333;
   width: 320px;
   height: 320px;
   padding: 1rem;
