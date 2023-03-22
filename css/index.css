@@ -416,11 +416,17 @@
     padding: 0;
   }
 
-  #trusted-partners .partner-wrapper li:first-child {
-    padding-left: 8rem;
+  #trusted-partners .partners {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
-  #trusted-partners .partner-wrapper li:last-child {
-    padding-right: 8rem;
+
+  #trusted-partners .partners {
+    margin: 0 -1rem;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
   }
 
   #amplify-engagement img {
@@ -468,6 +474,19 @@
     font-size: 2rem;
   }
 
+  #heart-mind-wallet,
+  #capture-heart-mind-wallet,
+  #solution-platforms-heading,
+  #amplify-engagement {
+    text-align: center;
+  }
+
+  #heart-mind-wallet .content,
+  #capture-heart-mind-wallet .content,
+  #amplify-engagement .content {
+    margin: 0 auto;
+  }
+
   #trusted-partners .partner-wrapper li:first-child {
     padding-left: 4rem;
   }
@@ -487,11 +506,18 @@
 
   #key-benefits .benefits li {
     width: 100%;
-    max-width: 400px;
+    max-width: 260px;
+    text-align: center;
   }
 
   #key-benefits .benefits li:not(:last-child) {
     margin-bottom: 40px;
+  }
+
+  #key-offerings .tag {
+    display: block;
+    width: fit-content;
+    margin: auto;
   }
 
   #key-offerings .offering-group {
@@ -510,6 +536,10 @@
   #solutions .line {
     flex-direction: column-reverse;
     row-gap: 1rem;
+  }
+
+  #solutions .tag {
+    margin-bottom: 2rem;
   }
 
   #solutions .solution-notes .line .icon {
@@ -542,6 +572,12 @@
 
   #testimonials .wrapper {
     display: block;
+    text-align: center;
+  }
+
+  #testimonials .avatar {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #testimonials .heading {
@@ -800,6 +836,7 @@
 
   #capture-zero-party-list .img-wrapper {
     display: flex;
+    margin-top: 20px;
   }
 
   #solution-hero-banner .content,
@@ -865,12 +902,17 @@
   #solution-platforms .swiper-button-prev {
     left: 1rem;
   }
+
+  #heart-mind-wallet .list {
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 568px) {
   #capture-zero-party-list .content .list li {
     width: 100%;
     padding-right: 0;
+    text-align: center;
   }
 }
 
@@ -1053,10 +1095,12 @@
 
   #global-expertise .company-stats {
     display: block;
+    border: none;
   }
 
   #global-expertise .company-stats .stat-item {
     width: 100%;
+    border: none;
   }
 }
 
@@ -1075,12 +1119,13 @@
   }
 
   #global-expertise .heading {
-    font-size: 3rem;
+    font-size: 2.3rem;
   }
 }
 
 @media only screen and (max-width: 640px) {
   #our-team .member {
     width: 100%;
+    text-align: center;
   }
 }
