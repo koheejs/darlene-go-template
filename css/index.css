@@ -429,16 +429,14 @@
   }
 
   #trusted-partners .partners {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-  }
-
-  #trusted-partners .partners {
     margin: 0 -1rem;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    overflow-x: auto;
+  }
+
+  #trusted-partners .partners li {
+    width: calc(100% / 3);
   }
 
   #amplify-engagement img {
@@ -499,11 +497,8 @@
     margin: 0 auto;
   }
 
-  #trusted-partners .partner-wrapper li:first-child {
-    padding-left: 4rem;
-  }
-  #trusted-partners .partner-wrapper li:last-child {
-    padding-right: 4rem;
+  #trusted-partners .partners li {
+    width: calc(100% / 2);
   }
 
   #trusted-partners .title {
