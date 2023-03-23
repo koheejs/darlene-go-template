@@ -1133,6 +1133,10 @@
     padding: 0 3rem;
   }
 
+  #our-team .members-list {
+    margin: 0;
+  }
+
   #global-expertise {
     padding: 6rem 0;
     height: auto;
