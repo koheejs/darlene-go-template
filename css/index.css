@@ -178,6 +178,10 @@
   object-position: bottom right;
 }
 
+#amplify-engagement .background-mb {
+  display: none;
+}
+
 /* Key offerings section */
 #key-offerings {
   padding: 10rem 0;
@@ -402,6 +406,14 @@
     position: static;
   }
 
+  #amplify-engagement .background {
+    display: none;
+  }
+
+  #amplify-engagement .background-mb {
+    display: block;
+  }
+
   #amplify-engagement .img-wrapper {
     display: flex;
   }
@@ -620,7 +632,7 @@
 }
 
 #solution-hero-banner img,
-#capture-heart-mind-wallet img,
+#capture-heart-mind-wallet .background,
 #capture-zero-party-list .background {
   width: 100%;
   right: 0;
@@ -628,6 +640,11 @@
   transform: translateY(-48%);
   position: absolute;
   z-index: 0;
+}
+
+#solution-hero-banner .background-mb,
+#capture-zero-party-list .background-mb {
+  display: none;
 }
 
 #solution-hero-banner .container,
@@ -826,17 +843,24 @@
     padding: 4rem 0 0;
   }
 
-  #solution-hero-banner img,
-  #capture-heart-mind-wallet img,
-  #capture-zero-party-list .background {
+  #solution-hero-banner .background-mb,
+  #capture-heart-mind-wallet .background-mb,
+  #capture-zero-party-list .background-mb {
     width: 100%;
     position: static;
     transform: none;
+    margin-top: 20px;
+    display: block;
+  }
+
+  #solution-hero-banner .background,
+  #capture-heart-mind-wallet .background,
+  #capture-zero-party-list .background {
+    display: none;
   }
 
   #capture-zero-party-list .img-wrapper {
     display: flex;
-    margin-top: 20px;
   }
 
   #solution-hero-banner .content,

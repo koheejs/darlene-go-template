@@ -70,3 +70,58 @@
     },
   });
 })();
+
+(function () {
+  if (!CountUp) return;
+
+  const yearsAnim = new CountUp('years', 7);
+  const expAnim = new CountUp('experience', 60, { suffix: '+' });
+  const membersAnim = new CountUp('members', 100, { suffix: '+' });
+
+  const handleIntersection = ([entry]) => {
+    if (entry.isIntersecting) {
+      const elementId = entry.target.id;
+      console.log(elementId);
+      switch (elementId) {
+        case 'years':
+          yearsAnim.start();
+          break;
+        case 'experience':
+          expAnim.start();
+          break;
+        case 'members':
+          membersAnim.start();
+          break;
+      }
+    }
+  };
+
+  const intersectionOptions = {
+    root: null,
+    threshold: 0,
+  };
+
+  // Start observing the target element
+  const yearsNumber = document.getElementById('years');
+  const expNumber = document.getElementById('experience');
+  const membersNumber = document.getElementById('members');
+
+  const yearsObserver = new window.IntersectionObserver(
+    handleIntersection,
+    intersectionOptions
+  );
+
+  const expObserver = new window.IntersectionObserver(
+    handleIntersection,
+    intersectionOptions
+  );
+
+  const membersObserver = new window.IntersectionObserver(
+    handleIntersection,
+    intersectionOptions
+  );
+
+  yearsObserver.observe(yearsNumber);
+  expObserver.observe(expNumber);
+  membersObserver.observe(membersNumber);
+})();
