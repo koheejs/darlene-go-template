@@ -72,7 +72,7 @@
 })();
 
 (function () {
-  if (!CountUp) return;
+  if (!window.CountUp) return;
 
   const yearsAnim = new CountUp('years', 7);
   const expAnim = new CountUp('experience', 60, { suffix: '+' });

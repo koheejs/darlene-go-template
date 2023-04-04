@@ -202,7 +202,9 @@
   display: flex;
   align-items: center;
   margin-bottom: 2rem;
-  transition: color 0.3s;
+  transform: scale(96%);
+  transform-origin: left bottom;
+  transition: all 0.3s;
 }
 
 #key-offerings .offering-group.active .title {
@@ -211,6 +213,7 @@
 
 #key-offerings .offering-group:hover .title {
   color: var(--primary-color);
+  transform: scale(100%);
 }
 
 #key-offerings .offering-group .title span {
@@ -230,6 +233,10 @@
   height: 0;
   overflow: hidden;
   transition: height 0.3s ease;
+}
+
+#key-offerings .offering-group .content p {
+  margin-bottom: 6px;
 }
 
 /* Key benefits section */
@@ -701,13 +708,14 @@
 
 #heart-mind-wallet .list {
   display: flex;
-  flex-wrap: wrap;
-  row-gap: 2rem;
   justify-content: space-between;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 #heart-mind-wallet .list li {
   max-width: 400px;
+  padding: 0 10px;
 }
 
 #heart-mind-wallet .list .icon {
@@ -774,7 +782,8 @@
 }
 
 #solution-platforms .swiper-slide h3 {
-  font-size: 1.8rem;
+  font-weight: 700;
+  font-size: 2.5rem;
   margin: 2.5rem 0;
 }
 
@@ -872,6 +881,22 @@
   }
 }
 
+@media only screen and (max-width: 920px) {
+  #heart-mind-wallet {
+    text-align: center;
+  }
+
+  #heart-mind-wallet .list {
+    flex-wrap: wrap;
+    row-gap: 4rem;
+    justify-content: center;
+  }
+
+  #heart-mind-wallet .list li {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   #heart-mind-wallet .list .icon {
     width: 60px;
@@ -920,10 +945,6 @@
 
   #solution-platforms .swiper-button-prev {
     left: 1rem;
-  }
-
-  #heart-mind-wallet .list {
-    justify-content: center;
   }
 }
 
