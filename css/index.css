@@ -583,28 +583,56 @@
 /* ======================================= */
 
 /* Hero banner section */
-#solution-hero-banner,
 #capture-heart-mind-wallet,
 #capture-zero-party-list {
   position: relative;
   overflow: hidden;
 }
 
-#solution-hero-banner {
+#capture-zero-party-list {
+  /* TODO: Update background image */
+  background-image: url('../assets/images/about-hero-bg.jpg');
+  background-size: cover;
   height: 56.267vw;
+  min-height: 800px;
+}
+
+#solution-hero-banner {
+  /* TODO: Update background image */
+  background-image: url('../assets/images/about-hero-bg.jpg');
+  background-size: cover;
+  height: 56.267vw;
+  min-height: 800px;
+}
+
+#solution-hero-banner .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#solution-hero-banner .content {
+  width: 40%;
+  max-width: 565px;
+  flex-shrink: 0;
+}
+
+#solution-hero-banner .illustrator {
+  flex-grow: 1;
+  text-align: center;
+}
+
+#solution-hero-banner .illustrator img {
+  width: 100%;
+  max-width: 800px;
 }
 
 #capture-heart-mind-wallet {
   height: 40.464vw;
 }
 
-#capture-zero-party-list {
-  height: 56.25vw;
-}
-
-#solution-hero-banner img,
-#capture-heart-mind-wallet .background,
-#capture-zero-party-list .background {
+#capture-heart-mind-wallet .background {
   width: 100%;
   right: 0;
   top: 50%;
@@ -613,32 +641,43 @@
   z-index: 0;
 }
 
-#solution-hero-banner .background-mb,
-#capture-zero-party-list .background-mb {
-  display: none;
-}
-
-#solution-hero-banner .container,
-#capture-heart-mind-wallet .container,
-#capture-zero-party-list .container {
+#capture-heart-mind-wallet .container {
   position: relative;
   height: 100%;
   z-index: 1;
 }
 
-#solution-hero-banner .content,
-#capture-heart-mind-wallet .content,
-#capture-zero-party-list .content {
+#capture-zero-party-list .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#capture-heart-mind-wallet .content {
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  width: 70%;
-  max-width: 565px;
 }
 
 #capture-zero-party-list .content {
-  width: 50%;
-  max-width: none;
+  width: 60%;
+  max-width: 745px;
+  flex-shrink: 0;
+}
+
+#capture-zero-party-list .illustrator {
+  width: 40%;
+}
+
+#capture-zero-party-list .illustrator img {
+  width: 100%;
+  max-width: 600px;
+}
+
+#capture-heart-mind-wallet .content {
+  width: 70%;
+  max-width: 745px;
 }
 
 #solution-hero-banner .content .section-title,
@@ -669,6 +708,33 @@
 #capture-zero-party-list .content .title {
   font-size: 1.8rem;
   margin: 1rem 0;
+}
+
+#solution-analyst {
+  padding: 8rem 0;
+}
+
+#solution-analyst .company-stats {
+  display: flex;
+  margin: 0 auto;
+  gap: 1.4rem;
+  width: 100%;
+}
+
+#solution-analyst .company-stats .stat-item {
+  padding: 3rem 1rem;
+  flex: 1;
+  text-align: center;
+  background-color: var(--primary-color);
+  margin-bottom: 1.4rem;
+}
+
+#solution-analyst .company-stats .stat-item .number {
+  font-size: 3.5rem;
+}
+
+#solution-analyst .company-stats .stat-description {
+  font-size: 2rem;
 }
 
 #heart-mind-wallet {
@@ -808,17 +874,36 @@
 /* ============================ */
 
 @media only screen and (max-width: 1150px) {
-  #solution-hero-banner,
-  #capture-heart-mind-wallet,
+  #solution-hero-banner {
+    height: auto;
+    padding: 12rem 0 8rem;
+  }
+
+  #solution-hero-banner .container {
+    display: block;
+  }
+
+  #solution-hero-banner .container .content {
+    text-align: center;
+    margin: 2rem auto 3rem;
+  }
+
   #capture-zero-party-list {
+    height: auto;
+    padding: 12rem 0 8rem;
+  }
+
+  #capture-zero-party-list .container {
+    display: block;
+  }
+
+  #capture-heart-mind-wallet {
     height: auto;
     min-height: 0;
     padding: 4rem 0 0;
   }
 
-  #solution-hero-banner .background-mb,
-  #capture-heart-mind-wallet .background-mb,
-  #capture-zero-party-list .background-mb {
+  #capture-heart-mind-wallet .background-mb {
     width: 100%;
     position: static;
     transform: none;
@@ -826,14 +911,18 @@
     display: block;
   }
 
-  #solution-hero-banner .background,
-  #capture-heart-mind-wallet .background,
-  #capture-zero-party-list .background {
+  #capture-heart-mind-wallet .background {
     display: none;
   }
 
-  #capture-zero-party-list .img-wrapper {
+  #capture-zero-party-list .content {
+    margin: 0 auto 4rem;
+  }
+
+  #capture-zero-party-list .illustrator {
+    width: 100%;
     display: flex;
+    justify-content: center;
   }
 
   #solution-hero-banner .content,
@@ -845,8 +934,29 @@
     width: 100%;
   }
 
+  #solution-analyst .company-stats .stat-item .number {
+    font-size: 2.5rem;
+  }
+
+  #solution-analyst .company-stats .stat-description {
+    font-size: 1.6rem;
+  }
+
   #solution-platforms .swiper-slide h3 {
     font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  #solution-analyst .company-stats {
+    gap: 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  #solution-analyst .company-stats .stat-item {
+    width: calc(50% - 7px);
+    flex: initial;
   }
 }
 
@@ -922,6 +1032,10 @@
     width: 100%;
     padding-right: 0;
     text-align: center;
+  }
+
+  #solution-analyst .company-stats .stat-item {
+    width: 100%;
   }
 }
 
