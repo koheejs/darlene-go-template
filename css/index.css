@@ -935,11 +935,11 @@
 
 /* About intro section */
 #about-intro {
-  background-image: url('../assets/images/about-hero-bg.png');
+  background-image: url('../assets/images/about-hero-bg.jpg');
   background-size: cover;
   max-height: 80vh;
   position: relative;
-  min-height: 600px;
+  min-height: 800px;
 }
 
 #about-intro #about-intro .container {
@@ -990,38 +990,37 @@
 #global-expertise .company-stats {
   display: flex;
   margin: 0 auto;
+  gap: 1.4rem;
   width: 100%;
   max-width: 1200px;
-  border-left: 1px solid var(--white-color);
-  border-right: 1px solid var(--white-color);
 }
 
 #global-expertise .company-stats .stat-item {
   font-size: 1.5rem;
   padding: 2rem 1rem 4rem;
+  width: calc(100% / 3);
+  flex-shrink: 0;
+  text-align: center;
+  background-color: var(--primary-color);
+  margin-bottom: 1.4rem;
 }
 
 #global-expertise .company-stats .stat-item .number {
   font-size: 4.6rem;
   margin-right: 1rem;
-  color: var(--primary-color);
 }
 
 #global-expertise .company-stats .stat-description {
   font-size: 3.5rem;
 }
 
-#global-expertise .company-stats .stat-item {
-  width: calc(100% / 3);
-  flex-shrink: 0;
-  text-align: center;
-  border-left: 1px solid var(--white-color);
-  border-right: 1px solid var(--white-color);
-}
-
 /* Our team section */
 #our-team {
   padding: 8rem 0;
+}
+
+#our-team .tag {
+  margin-bottom: 4rem;
 }
 
 #our-team .members-list {

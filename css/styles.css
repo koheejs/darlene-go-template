@@ -78,6 +78,13 @@ header {
   font-size: 2rem;
 }
 
+header.fixed {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
 header .container {
   display: flex;
   justify-content: space-between;
