@@ -1,6 +1,12 @@
 'use strict';
 
-(function () {
+/**
+ * =================================================================
+ * Mobile menu handling module
+ * =================================================================
+ */
+
+(function menuMobile() {
   const classFreezeBody = 'freeze-body';
   const classActive = 'active';
 
@@ -14,7 +20,13 @@
   });
 })();
 
-(function () {
+/**
+ * =================================================================
+ * Offering group accordion module
+ * =================================================================
+ */
+
+(function offeringAccordion() {
   const offeringGroups = document.querySelectorAll('.offering-group');
 
   function toggle(element, isShow) {
@@ -41,7 +53,13 @@
   }
 })();
 
-(function () {
+/**
+ * =================================================================
+ * Solution platforms carousel module
+ * =================================================================
+ */
+
+(function platformCarousel() {
   if (!window.Swiper) return;
 
   const swiper = new Swiper('.solution-platforms', {
@@ -71,7 +89,13 @@
   });
 })();
 
-(function () {
+/**
+ * =================================================================
+ * Count up animation effects module
+ * =================================================================
+ */
+
+(function countUpAnimate() {
   if (!window.CountUp) return;
 
   const yearsAnim = new CountUp('years', 7);
@@ -81,7 +105,6 @@
   const handleIntersection = ([entry]) => {
     if (entry.isIntersecting) {
       const elementId = entry.target.id;
-      console.log(elementId);
       switch (elementId) {
         case 'years':
           yearsAnim.start();
@@ -124,4 +147,23 @@
   yearsObserver.observe(yearsNumber);
   expObserver.observe(expNumber);
   membersObserver.observe(membersNumber);
+})();
+
+/**
+ * =================================================================
+ * Feedback carousel module
+ * =================================================================
+ */
+
+(function feedbackCarousel() {
+  if (!window.Swiper) return;
+
+  const swiper = new Swiper('#testimonial-feedbacks', {
+    centeredSlides: true,
+    centeredSlidesBounds: true,
+    navigation: {
+      nextEl: '.testimonial-button-next',
+      prevEl: '.testimonial-button-prev',
+    },
+  });
 })();

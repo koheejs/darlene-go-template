@@ -285,25 +285,41 @@
 
 /* Testimonials section */
 #testimonials {
+  --swiper-navigation-top-offset: 8rem;
+  --swiper-navigation-sides-offset: 10rem;
+  --swiper-navigation-size: 60px;
+  --swiper-navigation-color: #ffffff;
   background-color: #191919;
   padding: 8rem 0 4rem;
 }
 
+#testimonials .container {
+  position: relative;
+}
+
 #testimonials .feedbacks {
-  padding: 0 4rem;
+  max-width: 1000px;
+}
+
+#testimonials .swiper-button-prev,
+#testimonials .swiper-button-next {
+  position: absolute;
+}
+#testimonials .swiper-button-next.swiper-button-disabled,
+#testimonials .swiper-button-prev.swiper-button-disabled {
+  opacity: 0;
 }
 
 #testimonials .feedbacks .item {
   margin: auto;
   margin-bottom: 8rem;
-  max-width: 800px;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
 #testimonials .avatar {
-  width: 120px;
-  height: 120px;
+  width: 160px;
+  height: 160px;
   margin-right: 4rem;
   flex-shrink: 0;
 }
@@ -337,14 +353,23 @@
   #hero-banner {
     height: 45vw;
   }
+
+  #testimonials {
+    --swiper-navigation-sides-offset: 4rem;
+  }
 }
 
 @media only screen and (max-width: 1150px) {
-  #hero-banner,
-  #amplify-engagement {
+  #hero-banner {
     height: auto;
     min-height: 0;
     padding: 4rem 0 0;
+  }
+
+  #amplify-engagement {
+    height: auto;
+    min-height: 0;
+    padding: 12rem 0;
   }
 
   #amplify-engagement .img-wrapper img {
@@ -360,6 +385,7 @@
   #hero-banner .video-wrapper {
     width: 100%;
     min-width: 0;
+    max-height: 680px;
     position: static;
   }
 
@@ -390,6 +416,11 @@
     width: 100%;
   }
 
+  #testimonials {
+    --swiper-navigation-sides-offset: 3rem;
+    --swiper-navigation-size: 44px;
+  }
+
   #key-offerings {
     padding: 8rem 0;
   }
@@ -404,17 +435,18 @@
 }
 
 @media only screen and (max-width: 960px) {
+  #amplify-engagement {
+    text-align: center;
+    padding: 4rem 0 8rem;
+  }
+
   #amplify-engagement .container {
     flex-direction: column-reverse;
   }
 
   #amplify-engagement .img-wrapper {
     max-width: 100%;
-  }
-
-  #amplify-engagement {
-    text-align: center;
-    padding-bottom: 40px;
+    margin-bottom: 4rem;
   }
 
   #solutions .solution-notes {
@@ -446,6 +478,15 @@
 
   .section-description {
     font-size: 2rem;
+  }
+
+  #testimonials .feedbacks .item {
+    display: block;
+    text-align: center;
+  }
+
+  #testimonials .feedbacks .item .avatar {
+    margin-bottom: 2rem;
   }
 
   #heart-mind-wallet,

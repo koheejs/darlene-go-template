@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </head>
   <body>
     <!-- HEADER -->
@@ -147,7 +152,7 @@
           <div class="solution-notes">
             <div class="note">
               <div class="icon">
-                <img src="./assets/images/circleicon-bball.png" alt="" />
+                <img src="./assets/images/circleicon-bball-y.png" alt="" />
               </div>
               <div class="content">
                 <div class="heading">Contests & Promotions</div>
@@ -160,7 +165,7 @@
             </div>
             <div class="note">
               <div class="icon">
-                <img src="./assets/images/circleicon-bball.png" alt="" />
+                <img src="./assets/images/circleicon-heart-y.png" alt="" />
               </div>
               <div class="content">
                 <div class="heading">Loyalty & Rewards</div>
@@ -173,7 +178,7 @@
             </div>
             <div class="note">
               <div class="icon">
-                <img src="./assets/images/circleicon-bball.png" alt="" />
+                <img src="./assets/images/circleicon-brain-y.png" alt="" />
               </div>
               <div class="content">
                 <div class="heading">Purchase Verification</div>
@@ -186,7 +191,7 @@
             </div>
             <div class="note">
               <div class="icon">
-                <img src="./assets/images/circleicon-bball.png" alt="" />
+                <img src="./assets/images/circleicon-bball-y.png" alt="" />
               </div>
               <div class="content">
                 <div class="heading">Insights & Retargeting</div>
@@ -199,7 +204,7 @@
             </div>
             <div class="note">
               <div class="icon">
-                <img src="./assets/images/circleicon-bball.png" alt="" />
+                <img src="./assets/images/circleicon-heart-y.png" alt="" />
               </div>
               <div class="content">
                 <div class="heading">Managed Services</div>
@@ -223,35 +228,39 @@
 
       <section id="testimonials">
         <div class="container">
-          <div class="feedbacks">
-            <div class="item">
-              <div class="avatar">
-                <img src="./assets/images/pic-businessman_1.png" alt="" />
+          <div class="testimonial-button-prev swiper-button-prev"></div>
+          <div class="testimonial-button-next swiper-button-next"></div>
+          <div id="testimonial-feedbacks" class="feedbacks swiper">
+            <div class="swiper-wrapper">
+              <div class="item swiper-slide">
+                <div class="avatar">
+                  <img src="./assets/images/pic-businessman_1.png" alt="" />
+                </div>
+                <div>
+                  <h3 class="title">Fully Customized. Intuitive Solution.</h3>
+                  <p class="review">
+                    “GOcxm helped Volvo/Mack develop a fully customized sales
+                    prospecting tool utilized throughout the North American
+                    network. With their expertise in web application development
+                    we can deliver a digital experience that drives commercial
+                    strategy in an intuitive solution.”
+                  </p>
+                </div>
               </div>
-              <div>
-                <h3 class="title">Fully Customized. Intuitive Solution.</h3>
-                <p class="review">
-                  “GOcxm helped Volvo/Mack develop a fully customized sales
-                  prospecting tool utilized throughout the North American
-                  network. With their expertise in web application development
-                  we can deliver a digital experience that drives commercial
-                  strategy in an intuitive solution.”
-                </p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="avatar">
-                <img src="./assets/images/pic-businessman_1.png" alt="" />
-              </div>
-              <div>
-                <h3 class="title">Fully Customized. Intuitive Solution.</h3>
-                <p class="review">
-                  “GOcxm helped Volvo/Mack develop a fully customized sales
-                  prospecting tool utilized throughout the North American
-                  network. With their expertise in web application development
-                  we can deliver a digital experience that drives commercial
-                  strategy in an intuitive solution.”
-                </p>
+              <div class="item swiper-slide">
+                <div class="avatar">
+                  <img src="./assets/images/pic-businessman_1.png" alt="" />
+                </div>
+                <div>
+                  <h3 class="title">Fully Customized. Intuitive Solution.</h3>
+                  <p class="review">
+                    “GOcxm helped Volvo/Mack develop a fully customized sales
+                    prospecting tool utilized throughout the North American
+                    network. With their expertise in web application development
+                    we can deliver a digital experience that drives commercial
+                    strategy in an intuitive solution.”
+                  </p>
+                </div>
               </div>
             </div>
           </div>
