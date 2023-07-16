@@ -1396,3 +1396,90 @@
     text-align: center;
   }
 }
+
+/* ============================ */
+/* END RESPONSIVE */
+/* ============================ */
+
+/* ======================================= */
+/* ============= ABOUT PAGE ============== */
+/* ======================================= */
+
+#contact-form {
+  padding: 8rem 0;
+}
+
+#contact-form .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+}
+
+#contact-form .introduction {
+  width: 40%;
+  max-width: 500px;
+}
+
+#contact-form .introduction .desc {
+  max-width: 360px;
+}
+
+#contact-form .logo {
+  width: 100px;
+  margin-bottom: 2rem;
+}
+
+#contact-form .logo img {
+  width: 100%;
+}
+
+#contact-form .form-container {
+  max-width: 500px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+#contact-form form {
+  margin: 0 auto;
+}
+
+#contact-form form textarea,
+#contact-form form input {
+  display: block;
+  width: 100%;
+  padding: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+#contact-form form textarea::placeholder,
+#contact-form form input::placeholder {
+  color: #aaaddd;
+}
+
+#contact-form form button {
+  display: block;
+  border: none;
+  color: white;
+  margin-top: 4rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #contact-form .container {
+    display: block;
+  }
+
+  #contact-form .introduction {
+    width: 100%;
+    max-width: none;
+    margin-bottom: 4rem;
+  }
+
+  #contact-form .introduction .desc {
+    max-width: none;
+  }
+
+  #contact-form .form-container {
+    max-width: none;
+  }
+}
