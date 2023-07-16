@@ -712,6 +712,91 @@
   margin-bottom: 3rem;
 }
 
+#iot-solution .features .feature-item {
+  display: flex;
+}
+
+#iot-solution .features .feature-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+#iot-solution .features .feature-item:first-child .device {
+  padding-top: 8rem;
+}
+
+#iot-solution .features .feature-item:last-child .device {
+  padding-bottom: 8rem;
+}
+
+#iot-solution .feature-item .divider {
+  width: 6px;
+  position: relative;
+  background-color: var(--primary-color);
+}
+
+#iot-solution .feature-item .divider span {
+  display: block;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  color: var(--black-color);
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  line-height: 60px;
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Archivo';
+}
+
+#iot-solution .feature-item .content,
+#iot-solution .feature-item .device {
+  width: calc(50% - 3px);
+  align-self: center;
+}
+
+#iot-solution .feature-item .content {
+  display: flex;
+  flex-direction: column;
+}
+
+#iot-solution .feature-item:nth-child(odd) .device {
+  text-align: right;
+}
+
+#iot-solution .feature-item:nth-child(even) .content {
+  align-items: flex-end;
+  text-align: right;
+}
+
+#iot-solution .feature-item:nth-child(odd) .device,
+#iot-solution .feature-item:nth-child(even) .content {
+  padding-right: 8rem;
+}
+
+#iot-solution .feature-item:nth-child(even) .device,
+#iot-solution .feature-item:nth-child(odd) .content {
+  padding-left: 8rem;
+}
+
+#iot-solution .feature-item .device img {
+  width: 100%;
+  max-width: 150px;
+}
+
+#iot-solution .feature-item .content .title {
+  font-size: 3rem;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+
+#iot-solution .feature-item .content .desc {
+  margin-bottom: 2rem;
+  max-width: 400px;
+}
+
 #capture-zero-party-list .content .list {
   display: flex;
   flex-wrap: wrap;
@@ -983,6 +1068,43 @@
 }
 
 @media only screen and (max-width: 920px) {
+  #iot-solution .feature-item {
+    margin-bottom: 2rem;
+  }
+
+  #iot-solution .feature-item .device {
+    width: 30%;
+  }
+
+  #iot-solution .feature-item .content {
+    width: 70%;
+  }
+
+  #iot-solution .feature-item .content .title {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  #iot-solution .feature-item:nth-child(odd) .device,
+  #iot-solution .feature-item:nth-child(even) .content {
+    padding-right: 1rem;
+  }
+
+  #iot-solution .feature-item:nth-child(even) .device,
+  #iot-solution .feature-item:nth-child(odd) .content {
+    padding-left: 1rem;
+  }
+
+  #iot-solution .features .feature-item:first-child .device,
+  #iot-solution .features .feature-item:last-child .device {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  #iot-solution .feature-item .divider {
+    display: none;
+  }
+
   #heart-mind-wallet {
     text-align: center;
   }

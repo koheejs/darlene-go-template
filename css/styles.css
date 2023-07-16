@@ -12,6 +12,11 @@
   src: url(../assets/fonts/Nunito-VariableFont_wght.ttf);
 }
 
+@font-face {
+  font-family: 'Archivo';
+  src: url(../assets/fonts/ArchivoBlack-Regular.ttf);
+}
+
 * {
   box-sizing: border-box;
 }
