@@ -151,6 +151,39 @@
 
 /**
  * =================================================================
+ * Benefits description height
+ * =================================================================
+ */
+(function benefitsHeight() {
+  const keyBenefitsSection = document.getElementById('key-benefits');
+  const benefitDescriptions =
+    keyBenefitsSection.getElementsByClassName('description');
+  const arrayDescriptions = Array.from(benefitDescriptions);
+
+  function adjustHeight() {
+    arrayDescriptions.forEach((element) => {
+      element.removeAttribute('style');
+    });
+
+    if (window.innerWidth <= 960) return;
+
+    let maxHeight = arrayDescriptions[0].clientHeight;
+
+    arrayDescriptions.forEach((element) => {
+      maxHeight = Math.max(maxHeight, element.clientHeight);
+    });
+
+    arrayDescriptions.forEach((element) => {
+      element.style.height = `${Math.ceil(maxHeight)}px`;
+    });
+  }
+
+  window.addEventListener('resize', adjustHeight);
+  window.dispatchEvent(new Event('resize'));
+})();
+
+/**
+ * =================================================================
  * Feedback carousel module
  * =================================================================
  */

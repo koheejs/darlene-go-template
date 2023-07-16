@@ -6,7 +6,7 @@
 
 .section-description {
   font-size: 2.5rem;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 .tag {
@@ -81,7 +81,7 @@
 
 #hero-banner .content {
   position: relative;
-  top: 24px;
+  top: 4rem;
   width: 70%;
   max-width: 565px;
 }
@@ -96,7 +96,7 @@
 
 #amplify-engagement .content {
   top: 50%;
-  max-width: 660px;
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -201,26 +201,56 @@
 
 /* Key benefits section */
 #key-benefits {
-  background-color: var(--dark-color);
-  padding: 8rem 0;
+  /* TODO: Update background image */
+  background-image: url('../assets/images/about-hero-bg.jpg');
+  background-size: cover;
+  min-height: 800px;
+  padding: 16rem 0;
 }
 
-#key-benefits .benefits {
+#key-benefits .benefits-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  row-gap: 60px;
-  column-gap: 40px;
 }
 
-#key-benefits .benefits li {
-  width: 220px;
+#key-benefits .benefit-item {
+  flex: 1;
 }
 
-#key-benefits .benefits img {
+#key-benefits .benefit-item .icon {
   width: 60px;
-  height: 60px;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
+  margin-left: 2rem;
+}
+
+#key-benefits .benefit-item .icon img {
+  width: 100%;
+}
+
+#key-benefits .benefit-item .description {
+  padding: 0 2rem;
+  font-size: 2.5rem;
+  line-height: 1.5;
+  margin-bottom: 4rem;
+  max-width: 400px;
+}
+
+#key-benefits .benefit-item .description .highlight {
+  color: var(--primary-color);
+}
+
+#key-benefits .benefit-item .divider {
+  height: 1rem;
+  margin-bottom: 4rem;
+  background-color: var(--primary-color);
+}
+
+#key-benefits .benefit-item .keys {
+  padding: 0 2rem;
+}
+
+#key-benefits .benefit-item .keys .bullet {
+  color: var(--primary-color);
+  margin-right: 1rem;
 }
 
 /* Solutions section */
@@ -449,6 +479,14 @@
     margin-bottom: 4rem;
   }
 
+  #key-benefits .benefits-list {
+    display: block;
+  }
+
+  #key-benefits .benefit-item {
+    margin-bottom: 8rem;
+  }
+
   #solutions .solution-notes {
     display: block;
   }
@@ -507,22 +545,6 @@
 
   #trusted-partners .title {
     text-align: center;
-  }
-
-  #key-benefits .benefits {
-    display: block;
-    width: fit-content;
-    margin: 0 auto;
-  }
-
-  #key-benefits .benefits li {
-    width: 100%;
-    max-width: 260px;
-    text-align: center;
-  }
-
-  #key-benefits .benefits li:not(:last-child) {
-    margin-bottom: 40px;
   }
 
   #key-offerings .tag {
