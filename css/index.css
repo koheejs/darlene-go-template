@@ -201,8 +201,7 @@
 
 /* Key benefits section */
 #key-benefits {
-  /* TODO: Update background image */
-  background-image: url('../assets/images/about-hero-bg.jpg');
+  background-image: url('../assets/images/BG-Dude.png');
   background-size: cover;
   min-height: 800px;
   padding: 16rem 0;
@@ -612,16 +611,14 @@
 }
 
 #capture-zero-party-list {
-  /* TODO: Update background image */
-  background-image: url('../assets/images/about-hero-bg.jpg');
+  background-image: url('../assets/images/BG-Fans.jpg');
   background-size: cover;
   height: 56.267vw;
   min-height: 800px;
 }
 
 #solution-hero-banner {
-  /* TODO: Update background image */
-  background-image: url('../assets/images/about-hero-bg.jpg');
+  background-image: url('../assets/images/BG-Dudette.png');
   background-size: cover;
   height: 56.267vw;
   min-height: 800px;
@@ -684,8 +681,9 @@
 
 #capture-zero-party-list .content {
   width: 60%;
-  max-width: 745px;
+  max-width: 840px;
   flex-shrink: 0;
+  font-size: 2rem;
 }
 
 #capture-zero-party-list .illustrator {
@@ -694,7 +692,26 @@
 
 #capture-zero-party-list .illustrator img {
   width: 100%;
-  max-width: 600px;
+}
+
+#capture-zero-party-list .content .list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 6rem;
+}
+
+#capture-zero-party-list .content .list li {
+  width: 50%;
+  padding-right: 4rem;
+}
+
+#capture-zero-party-list .content .icon {
+  width: 60px;
+}
+
+#capture-zero-party-list .content .title {
+  font-size: 3rem;
+  margin: 1rem 0 3rem;
 }
 
 #capture-heart-mind-wallet .content {
@@ -795,26 +812,6 @@
 #iot-solution .feature-item .content .desc {
   margin-bottom: 2rem;
   max-width: 400px;
-}
-
-#capture-zero-party-list .content .list {
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 6rem;
-}
-
-#capture-zero-party-list .content .list li {
-  width: 50%;
-  padding-right: 4rem;
-}
-
-#capture-zero-party-list .content .icon {
-  width: 60px;
-}
-
-#capture-zero-party-list .content .title {
-  font-size: 1.8rem;
-  margin: 1rem 0;
 }
 
 #solution-analyst {
@@ -1220,8 +1217,8 @@
 }
 #about-intro .description {
   font-size: 2.5rem;
-  max-width: 600px;
-  margin: 3rem 0;
+  max-width: 900px;
+  margin: 3rem 0 8rem;
 }
 
 /* Global expertise section */
