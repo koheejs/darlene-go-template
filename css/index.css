@@ -748,7 +748,7 @@
 #iot-solution .feature-item .divider {
   width: 6px;
   position: relative;
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
 }
 
 #iot-solution .feature-item .divider span {
@@ -759,7 +759,7 @@
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   color: var(--black-color);
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   border-radius: 50%;
   line-height: 60px;
   text-align: center;
@@ -926,6 +926,10 @@
   margin: 2.5rem 0;
 }
 
+#solution-platforms .swiper-slide p:last-child {
+  font-size: 1.4rem;
+}
+
 #solution-platforms .swiper-slide img {
   height: 70px;
   width: 70px;
@@ -976,6 +980,12 @@
 /* ============================ */
 /* RESPONSIVE */
 /* ============================ */
+
+@media only screen and (max-width: 1536px) {
+  #capture-heart-mind-wallet .content {
+    width: 45%;
+  }
+}
 
 @media only screen and (max-width: 1150px) {
   #solution-hero-banner {
@@ -1140,6 +1150,10 @@
 
   #solution-platforms .swiper-slide p {
     font-size: 1.5rem;
+  }
+
+  #solution-platforms .swiper-slide p:last-child {
+    font-size: 1.2rem;
   }
 
   #solution-platforms .swiper-slide img {
