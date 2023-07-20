@@ -146,6 +146,11 @@
  */
 (function benefitsHeight() {
   const keyBenefitsSection = document.getElementById('key-benefits');
+
+  if (!keyBenefitsSection) {
+    return;
+  }
+
   const benefitDescriptions =
     keyBenefitsSection.getElementsByClassName('description');
   const arrayDescriptions = Array.from(benefitDescriptions);
