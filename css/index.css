@@ -264,7 +264,7 @@
 /* Solutions section */
 #solutions {
   min-height: 500px;
-  padding-bottom: 4rem;
+  padding: 4rem 0;
 }
 
 #solutions .hero {
@@ -276,49 +276,48 @@
 }
 
 #solutions .solution-notes {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -2rem;
-  margin-right: -2rem;
+  max-width: 530px;
+  margin: 0 auto 3rem;
 }
 
 #solutions .note {
-  width: 50%;
-  padding: 2rem;
+  padding: 3rem 0;
   box-sizing: border-box;
-  display: flex;
-  gap: 4rem;
+  border-bottom: 1px solid var(--white-color);
+  cursor: pointer;
+  user-select: none;
 }
 
 #solutions .note .icon {
-  width: 60px;
+  width: 30px;
   flex-shrink: 0;
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
 }
 
 #solutions .note .icon img {
   width: 100%;
 }
 
+#solutions .note.active .icon {
+  transform: rotate(0deg);
+}
+
 #solutions .note .heading {
   line-height: 60px;
   margin-bottom: 1rem;
-  font-size: 2.4rem;
+  font-size: 3.5rem;
   color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #solutions .note .description {
-  max-width: 450px;
-}
-
-#solutions .note-cta .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-#solutions .note-cta h3 {
-  font-size: 4rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  height: 0;
+  transition: height 0.3s;
+  overflow: hidden;
 }
 
 /* Testimonials section */
@@ -494,18 +493,6 @@
     margin-bottom: 8rem;
   }
 
-  #solutions .solution-notes {
-    display: block;
-  }
-
-  #solutions .note {
-    width: 100%;
-  }
-
-  #solutions .note .description {
-    max-width: none;
-  }
-
   #key-offerings .offering-group .title {
     justify-content: space-between;
     font-size: 4rem;
@@ -532,6 +519,18 @@
 
   #testimonials .feedbacks .item .avatar {
     margin-bottom: 2rem;
+  }
+
+  #solutions .solution-notes {
+    display: block;
+  }
+
+  #solutions .solution-notes .heading {
+    font-size: 3rem;
+  }
+
+  #solutions .solution-notes .description {
+    font-size: 1.8rem;
   }
 
   #heart-mind-wallet,

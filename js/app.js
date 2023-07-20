@@ -27,23 +27,18 @@
  */
 
 (function offeringAccordion() {
-  const offeringGroups = document.querySelectorAll('.offering-group');
+  const offeringGroups = document.querySelectorAll('.solution-notes .note');
 
   function toggle(element, isShow) {
     const classAct = isShow ? 'add' : 'remove';
     element.classList[classAct]('active');
-    const content = element.querySelector('.content');
+    const content = element.querySelector('.content .description');
     content.style.height = (isShow ? content.scrollHeight : 0) + 'px';
   }
 
   for (let i = 0; i < offeringGroups.length; i++) {
     const element = offeringGroups[i];
     element.addEventListener('click', function () {
-      offeringGroups.forEach((item, index) => {
-        if (index === i) return;
-        toggle(item);
-      });
-
       if (!this.classList.contains('active')) {
         toggle(this, true);
       } else {
