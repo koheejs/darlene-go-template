@@ -32,6 +32,7 @@ body {
   color: var(--white-color);
   background-color: var(--black-color);
   scroll-behavior: smooth; /* Enable smooth scrolling behavior */
+  margin-top: 9rem;
 }
 
 body.freeze-body {
@@ -80,15 +81,14 @@ h3 {
 
 /* HEADER */
 header {
-  padding: 3rem 0;
+  padding: 2rem 0;
   font-size: 2rem;
-}
-
-header.fixed {
-  position: absolute;
+  position: fixed;
   top: 0;
-  width: 100%;
-  z-index: 10;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background-color: var(--black-color);
 }
 
 header .container {
@@ -97,16 +97,14 @@ header .container {
   align-items: center;
 }
 
-header .mobile-button {
+header .menu-button {
   width: 40px;
-  align-items: center;
   cursor: pointer;
   position: relative;
   z-index: 100;
-  display: none;
 }
 
-header .mobile-button img {
+header .menu-button img {
   width: 100%;
 }
 
@@ -120,8 +118,27 @@ header .mobile-button img {
   height: 100%;
 }
 
-.header-nav li {
-  display: inline-block;
+header .header-nav {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  max-width: 450px;
+  overflow: hidden;
+  z-index: 90;
+  background-color: var(--dark-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 19rem 6rem 9rem;
+  font-size: 3rem;
+  transform: translateX(100%);
+  transition: transform 0.3s;
+}
+
+header .header-nav.active {
+  transform: translateX(0%);
 }
 
 .header-nav li:hover a {
@@ -251,14 +268,6 @@ footer .ref-nav a {
 
   .header-logo {
     height: 30px;
-  }
-
-  header .header-nav {
-    display: none;
-  }
-
-  header .mobile-button {
-    display: flex;
   }
 
   footer .row {

@@ -7,16 +7,11 @@
  */
 
 (function menuMobile() {
-  const classFreezeBody = 'freeze-body';
   const classActive = 'active';
-
-  const body = document.body;
-  const mobileMenuButton = document.querySelector('.mobile-button');
-  const mobileMenu = document.querySelector('.mobile-nav');
-
-  mobileMenuButton.addEventListener('click', function () {
-    body.classList.toggle(classFreezeBody);
-    mobileMenu.classList.toggle(classActive);
+  const menuButton = document.querySelector('.menu-button');
+  const navigation = document.querySelector('.header-nav');
+  menuButton.addEventListener('click', function () {
+    navigation.classList.toggle(classActive);
   });
 })();
 
@@ -27,23 +22,18 @@
  */
 
 (function offeringAccordion() {
-  const offeringGroups = document.querySelectorAll('.offering-group');
+  const offeringGroups = document.querySelectorAll('.solution-notes .note');
 
   function toggle(element, isShow) {
     const classAct = isShow ? 'add' : 'remove';
     element.classList[classAct]('active');
-    const content = element.querySelector('.content');
+    const content = element.querySelector('.content .description');
     content.style.height = (isShow ? content.scrollHeight : 0) + 'px';
   }
 
   for (let i = 0; i < offeringGroups.length; i++) {
     const element = offeringGroups[i];
     element.addEventListener('click', function () {
-      offeringGroups.forEach((item, index) => {
-        if (index === i) return;
-        toggle(item);
-      });
-
       if (!this.classList.contains('active')) {
         toggle(this, true);
       } else {
@@ -156,6 +146,11 @@
  */
 (function benefitsHeight() {
   const keyBenefitsSection = document.getElementById('key-benefits');
+
+  if (!keyBenefitsSection) {
+    return;
+  }
+
   const benefitDescriptions =
     keyBenefitsSection.getElementsByClassName('description');
   const arrayDescriptions = Array.from(benefitDescriptions);
