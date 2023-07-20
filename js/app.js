@@ -7,16 +7,11 @@
  */
 
 (function menuMobile() {
-  const classFreezeBody = 'freeze-body';
   const classActive = 'active';
-
-  const body = document.body;
-  const mobileMenuButton = document.querySelector('.mobile-button');
-  const mobileMenu = document.querySelector('.mobile-nav');
-
-  mobileMenuButton.addEventListener('click', function () {
-    body.classList.toggle(classFreezeBody);
-    mobileMenu.classList.toggle(classActive);
+  const menuButton = document.querySelector('.menu-button');
+  const navigation = document.querySelector('.header-nav');
+  menuButton.addEventListener('click', function () {
+    navigation.classList.toggle(classActive);
   });
 })();
 

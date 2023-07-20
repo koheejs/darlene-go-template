@@ -325,7 +325,7 @@
   --swiper-navigation-top-offset: 8rem;
   --swiper-navigation-sides-offset: 10rem;
   --swiper-navigation-size: 60px;
-  --swiper-navigation-color: #ffffff;
+  --swiper-navigation-color: var(--white-color);
   background-color: #191919;
   padding: 8rem 0 4rem;
 }
@@ -1512,7 +1512,7 @@
 body.contact-page {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - 9rem);
 }
 
 body.contact-page main {
@@ -1520,8 +1520,4 @@ body.contact-page main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-#contact-form {
-  padding: 14rem 0 8rem;
 }
