@@ -203,8 +203,15 @@
 #key-benefits {
   background-image: url('../assets/images/BG-Dude.png');
   background-size: cover;
+  background-position: center center;
   min-height: 800px;
   padding: 16rem 0;
+  display: flex;
+  align-items: center;
+}
+
+#key-benefits .container {
+  flex-grow: 1;
 }
 
 #key-benefits .benefits-list {
@@ -482,7 +489,7 @@
     display: block;
   }
 
-  #key-benefits .benefit-item {
+  #key-benefits .benefit-item:not(:last-child) {
     margin-bottom: 8rem;
   }
 
