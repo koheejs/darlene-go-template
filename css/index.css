@@ -1711,3 +1711,65 @@ body.contact-page main {
 .widget-slot {
   padding: 4rem 0;
 }
+
+/* ======================================= */
+/* ============= ARTICLE PAGE ============== */
+/* ======================================= */
+
+#article {
+  padding: 8rem 0;
+}
+
+#article .container {
+  max-width: 957px;
+}
+
+#article .title {
+  color: var(--primary-color);
+}
+
+#article .content {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+#article .content h3,
+#article .content strong {
+  font-weight: bold;
+}
+
+#article .content h3 {
+  font-size: 2.8rem;
+}
+
+#article .content p {
+  margin: 4rem 0;
+}
+
+#article .content ul {
+  margin: 4rem 0 4rem 2rem;
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+@media only screen and (max-width: 768px) {
+  #article {
+    padding: 6rem 0;
+  }
+
+  #article .title {
+    font-size: 3rem;
+  }
+
+  #article .title br {
+    display: none;
+  }
+
+  #article .content h3 {
+    font-size: 2.4rem;
+  }
+
+  #article .content {
+    font-size: 2rem;
+  }
+}
