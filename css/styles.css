@@ -99,6 +99,7 @@ header .container {
 
 header .menu-button {
   width: 40px;
+  height: 40px;
   cursor: pointer;
   position: relative;
   z-index: 100;
@@ -109,7 +110,7 @@ header .menu-button img {
 }
 
 .header-logo {
-  height: 50px;
+  height: 40px;
   position: relative;
   z-index: 100;
 }
@@ -242,6 +243,8 @@ footer .ref-nav a {
   display: block;
   text-decoration: underline;
   padding: 2px 6px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 /* ========== */
