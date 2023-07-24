@@ -1045,7 +1045,11 @@
   }
 
   #capture-zero-party-list .container {
-    display: block;
+    flex-direction: column-reverse;
+  }
+
+  #capture-zero-party-list .illustrator {
+    margin-bottom: 4rem;
   }
 
   #capture-heart-mind-wallet {
@@ -1220,6 +1224,15 @@
 }
 
 @media only screen and (max-width: 568px) {
+  #solution-hero-banner {
+    background-image: url('../assets/images/BG-Dudette-mb.png');
+    background-position: top left;
+  }
+
+  #capture-zero-party-list {
+    background-image: url('../assets/images/BG-Fans-mb.png');
+  }
+
   #capture-zero-party-list .content .list li {
     width: 100%;
     padding-right: 0;
@@ -1228,6 +1241,17 @@
 
   #solution-analyst .company-stats .stat-item {
     width: 100%;
+  }
+}
+
+@media only screen and (max-aspect-ratio: 4/8) {
+  #solution-hero-banner {
+    background-image: url('../assets/images/BG-Dudette-mb.png');
+    background-position: top left;
+  }
+
+  #capture-zero-party-list {
+    background-image: url('../assets/images/BG-Fans-mb.png');
   }
 }
 
