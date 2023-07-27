@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/countUp.min.js"></script>
   </head>
   <body>
@@ -46,8 +48,8 @@
       <section id="resources-intro">
         <div class="container">
           <div class="content">
-            <h1 class="title">Actionable Insights</h1>
-            <p class="description">
+            <h1 class="title" data-aos="fade">Actionable Insights</h1>
+            <p class="description" data-aos="fade-up" data-aos-delay="400">
               A thought leadership series where cutting-edge consumer trends,
               data insights, and expert perspectives collide. Join top minds at
               GOcxm to outperform consumer engagement, lower acquisition costs,
@@ -163,5 +165,14 @@
     </footer>
 
     <script src="./js/app.js"></script>
+    <script>
+      AOS.init({
+        offset: 10,
+        delay: 100,
+        duration: 400,
+        easing: 'ease-out',
+        once: true,
+      });
+    </script>
   </body>
 </html>
