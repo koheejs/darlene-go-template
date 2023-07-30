@@ -1,7 +1,6 @@
 .section-title {
   font-size: 4rem;
   line-height: 1.2;
-  color: var(--primary-color);
 }
 
 .section-description {
@@ -40,6 +39,10 @@
   padding: 8rem 0;
   min-height: 800px;
   overflow: hidden;
+}
+
+#amplify-engagement .section-title {
+  color: var(--white-color);
 }
 
 #hero-banner img {
@@ -581,6 +584,10 @@
   #capture-heart-mind-wallet .content,
   #amplify-engagement .content {
     margin: 0 auto;
+  }
+
+  #solution-platforms-heading .section-title {
+    color: var(--white-color);
   }
 
   #trusted-partners .partners li {
@@ -1636,6 +1643,7 @@
 
 #contact-form .wrapper {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-around;
   gap: 2rem;
   margin: 8rem 0;
@@ -1684,6 +1692,7 @@
   width: 100%;
   padding: 1.6rem;
   margin-bottom: 2rem;
+  font-family: Nunito;
 }
 
 #contact-form form textarea::placeholder,

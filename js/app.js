@@ -88,8 +88,8 @@
 (function countUpAnimate() {
   if (!window.CountUp) return;
 
-  const yearsAnim = new CountUp('years', 7);
-  const expAnim = new CountUp('experience', 60, { suffix: '+' });
+  const yearsAnim = new CountUp('years', 11);
+  const expAnim = new CountUp('experience', 77, { suffix: '+' });
   const membersAnim = new CountUp('members', 100, { suffix: '+' });
 
   const handleIntersection = ([entry]) => {

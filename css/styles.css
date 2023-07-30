@@ -67,6 +67,10 @@ h3 {
 }
 
 /* ==================== Utilities ==================== */
+.section-title {
+  color: var(--primary-color);
+}
+
 .text-center {
   text-align: center;
 }
@@ -77,6 +81,14 @@ h3 {
 
 .text-secondary {
   color: var(--secondary-color);
+}
+
+.text-white {
+  color: var(--white-color);
+}
+
+.text-bold {
+  font-weight: bold;
 }
 
 /* HEADER */
