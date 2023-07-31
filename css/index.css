@@ -289,7 +289,7 @@
 /* Solutions section */
 #solutions {
   min-height: 500px;
-  padding-bottom: 4rem;
+  padding-bottom: 6rem;
 }
 
 #solutions .hero {
@@ -301,7 +301,11 @@
 }
 
 #solutions .solution-notes {
-  margin: 0 auto 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -2rem;
+  margin-right: -2rem;
+  /* margin: 0 auto 3rem; */
 }
 
 #solutions .solution-notes .description {
@@ -309,27 +313,34 @@
 }
 
 #solutions .note {
-  padding: 3rem 0;
+  width: 50%;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  gap: 4rem;
+  /* padding: 3rem 0;
   box-sizing: border-box;
   border-bottom: 1px solid var(--white-color);
   cursor: pointer;
-  user-select: none;
+  user-select: none; */
 }
 
 #solutions .note .icon {
-  width: 30px;
+  width: 60px;
+  flex-shrink: 0;
+  /* width: 30px;
   flex-shrink: 0;
   transform: rotate(-90deg);
-  transition: transform 0.3s;
+  transition: transform 0.3s; */
 }
 
 #solutions .note .icon img {
   width: 100%;
 }
 
-#solutions .note.active .icon {
+/* #solutions .note.active .icon {
   transform: rotate(0deg);
-}
+} */
 
 #solutions .note .heading {
   line-height: 60px;
@@ -342,10 +353,25 @@
 }
 
 #solutions .note .description {
+  max-width: 450px;
+}
+
+#solutions .note-cta .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* #solutions .note .description {
   font-size: 2rem;
   height: 0;
   transition: height 0.3s;
   overflow: hidden;
+} */
+
+#solutions .note-cta h3 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
 }
 
 /* Testimonials section */
@@ -502,6 +528,18 @@
     width: 100%;
   }
 
+  #solutions .solution-notes {
+    display: block;
+  }
+
+  #solutions .note {
+    width: 100%;
+  }
+
+  #solutions .note .description {
+    max-width: none;
+  }
+
   #testimonials {
     --swiper-navigation-top-offset: 50%;
     --swiper-navigation-sides-offset: 3rem;
@@ -572,7 +610,7 @@
     margin-bottom: 2rem;
   }
 
-  #solutions .solution-notes {
+  /* #solutions .solution-notes {
     display: block;
   }
 
@@ -582,7 +620,7 @@
 
   #solutions .solution-notes .description {
     font-size: 1.8rem;
-  }
+  } */
 
   #heart-mind-wallet,
   #capture-heart-mind-wallet,
