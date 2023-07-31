@@ -33,6 +33,11 @@
   overflow: hidden;
 }
 
+#hero-banner .section-title {
+  border-left: 8px solid var(--secondary-color);
+  padding-left: 2.4rem;
+}
+
 #amplify-engagement {
   position: relative;
   height: 40vw;
