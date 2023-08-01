@@ -323,6 +323,7 @@
   box-sizing: border-box;
   display: flex;
   gap: 4rem;
+  margin-bottom: 2rem;
   /* padding: 3rem 0;
   box-sizing: border-box;
   border-bottom: 1px solid var(--white-color);
